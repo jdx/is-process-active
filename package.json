@@ -21,7 +21,7 @@
   "main": "lib/index.js",
   "repository": "https://github.com/jdxcode/is-process-active",
   "scripts": {
-    "prepare": "del lib && tsc",
+    "prepare": "del-cli lib && tsc",
     "test": "yarn test"
   },
   "types": "lib/index.d.ts"
