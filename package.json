@@ -1,0 +1,20 @@
+{
+  "name": "is-process-active",
+  "version": "0.0.0",
+  "description": "cross-platform check if process is active",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "repository": "https://github.com/jdxcode/is-process-active",
+  "types": "lib/index.d.ts",
+  "author": "Jeff Dickey <216188+jdxcode@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^22.0.0",
+    "@types/node": "^8.5.5",
+    "jest": "^22.0.4",
+    "ts-jest": "^22.0.0",
+    "typescript": "^2.6.2"
+  }
+}
