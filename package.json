@@ -22,7 +22,7 @@
   "repository": "https://github.com/jdxcode/is-process-active",
   "scripts": {
     "prepare": "del-cli lib && tsc",
-    "test": "yarn test"
+    "test": "jest"
   },
   "types": "lib/index.d.ts"
 }
