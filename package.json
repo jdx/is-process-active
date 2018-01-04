@@ -1,6 +1,6 @@
 {
   "name": "is-process-active",
-  "description": "cross-platform check if process is active",
+  "description": "cross-platform check if process pid is active",
   "version": "1.0.0",
   "author": "Jeff Dickey <216188+jdxcode@users.noreply.github.com>",
   "devDependencies": {
