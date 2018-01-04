@@ -1,7 +1,7 @@
 {
   "name": "is-process-active",
   "description": "cross-platform check if process is active",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Jeff Dickey <216188+jdxcode@users.noreply.github.com>",
   "devDependencies": {
     "@heroku-cli/tslint": "^1.1.1",
