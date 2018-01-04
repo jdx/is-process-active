@@ -1,5 +1,6 @@
+import { spawn, spawnSync } from 'child_process'
+
 import validate from './validate'
-import {spawn, spawnSync} from 'child_process'
 
 // no header, format: CSV, filter
 const args = (pid: number) => ['/NH', '/FO', 'CSV', '/FI', `PID eq ${pid}`]
@@ -28,4 +29,3 @@ export function isActiveSync(pid: number): boolean {
   if (result.status !== 0) throw new Error(`tasklist exited with code ${status}`)
   return !result.stdout.includes('No tasks are running')
 }
-

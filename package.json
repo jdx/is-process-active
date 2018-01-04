@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "author": "Jeff Dickey <216188+jdxcode@users.noreply.github.com>",
   "devDependencies": {
+    "@heroku-cli/tslint": "^1.1.1",
     "@types/jest": "^22.0.0",
     "@types/node": "^8.5.5",
     "del-cli": "^1.1.0",
     "jest": "^22.0.4",
+    "prettier": "^1.9.2",
     "ts-jest": "^22.0.0",
+    "tslint": "^5.8.0",
     "typescript": "^2.6.2"
   },
   "files": [

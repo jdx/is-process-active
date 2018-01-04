@@ -7,7 +7,7 @@ test('sync active', () => {
 })
 
 test('sync inactive', () => {
-  expect(pid.isActiveSync(process.pid*1000)).toEqual(false)
+  expect(pid.isActiveSync(process.pid * 1000)).toEqual(false)
 })
 
 test('async active', () => {
@@ -15,7 +15,7 @@ test('async active', () => {
 })
 
 test('async inactive', () => {
-  return expect(pid.isActive(process.pid*10000)).resolves.toEqual(false)
+  return expect(pid.isActive(process.pid * 10000)).resolves.toEqual(false)
 })
 
 skipIfWindows('init', () => {
