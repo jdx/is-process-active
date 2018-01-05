@@ -27,3 +27,5 @@ if (await pid.active(myPid)) {
   // do something if process is active
 }
 ```
+
+Note that on Unix it is [always synchronous](https://github.com/jdxcode/is-process-active/blob/master/src/unix.ts#L5). So if you never have to support Windows there is no reason to use the async version.
