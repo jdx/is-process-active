@@ -2,6 +2,12 @@ import * as pid from '../src'
 
 const skipIfWindows = process.platform === 'win32' ? test.skip : test
 
+const kill = process.kill
+
+afterEach(() => {
+  process.kill = kill
+})
+
 test('sync active', () => {
   expect(pid.isActiveSync(process.pid)).toEqual(true)
 })
@@ -32,4 +38,11 @@ test('-1', () => {
 
 test('string', () => {
   return expect(pid.isActive('foobar' as any)).resolves.toEqual(false)
+})
+
+skipIfWindows('kill errors', () => {
+  process.kill = () => { throw new Error('uh oh!') }
+  expect(() => {
+    pid.isActive(1)
+  }).toThrowError('uh oh!')
 })
