@@ -1,5 +1,6 @@
 import { spawn, spawnSync } from 'child_process'
 
+import debug from './debug'
 import validate from './validate'
 
 // no header, format: CSV, filter
@@ -12,6 +13,7 @@ const spawnOptions = {
 export function isActive(pid: number): Promise<boolean> {
   return new Promise((resolve, reject) => {
     if (!validate(pid)) return resolve(false)
+    debug('tasklist', args(pid))
     const p = spawn('tasklist', args(pid), spawnOptions)
     p.on('close', code => {
       if (code !== 0) reject(new Error(`tasklist exited with code ${code}`))
@@ -24,7 +26,8 @@ export function isActive(pid: number): Promise<boolean> {
 
 export function isActiveSync(pid: number): boolean {
   if (!validate(pid)) return false
-  const result = spawnSync('tasklist', ['/fi', `PID eq ${pid}`], spawnOptions)
+  debug('tasklist sync', args(pid))
+  const result = spawnSync('tasklist', args(pid), spawnOptions)
   if (result.error) throw result.error
   if (result.status !== 0) throw new Error(`tasklist exited with code ${status}`)
   return !result.stdout.includes('No tasks are running')
