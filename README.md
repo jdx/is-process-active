@@ -9,6 +9,7 @@ is-process-active
 [![npm](https://img.shields.io/npm/dw/is-process-active.svg)](https://npmjs.org/package/is-process-active)
 [![npm](https://img.shields.io/npm/l/is-process-active.svg)](https://github.com/jdxcode/is-process-active/blob/master/package.json)
 [![David](https://img.shields.io/david/jdxcode/is-process-active.svg)](https://david-dm.org/jdxcode/is-process-active)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Cross-platform support for detecting if a process pid is active. Uses `process.kill(pid, 0)` on unix and `tasklist.exe` on Windows.
 
