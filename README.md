@@ -2,7 +2,6 @@ is-process-active
 =================
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/jdxcode/is-process-active.svg)](https://greenkeeper.io/)
-
 [![CircleCI](https://circleci.com/gh/jdxcode/is-process-active/tree/master.svg?style=svg)](https://circleci.com/gh/jdxcode/is-process-active/tree/master)
 [![Build status](https://ci.appveyor.com/api/projects/status/fyhxf3w8gyqxv0ou/branch/master?svg=true)](https://ci.appveyor.com/project/Heroku/is-process-active/branch/master)
 [![codecov](https://codecov.io/gh/jdxcode/is-process-active/branch/master/graph/badge.svg)](https://codecov.io/gh/jdxcode/is-process-active)
